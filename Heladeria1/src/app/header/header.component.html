@@ -1,0 +1,21 @@
+<header>
+    <div class="row">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div><a href="" class="navbar-brand">"Heladería Don Bosco"</a></div>
+
+            <div><a href="" [routerLink]="['/listarTarjetas']" routerLinkActive="Active"
+                    class="navbar-brand">Tarjetas</a>
+            </div>
+
+            <div><a href="" [routerLink]="['/listarPedidos']" class="navbar-brand">Pedidos</a></div>
+
+            <div><a href="" class="navbar-brand">Productos</a></div>
+
+            <div class="d-flex flex-row-reverse">
+                <div class="col">
+                    <div><a href="" [routerLink]="['/inicio']" class="navbar-brand">{{myuser.nombre}} {{myuser.apellido}}</a></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>

@@ -1,0 +1,34 @@
+<div class="container">
+
+    <!-- <button type="button" class="btn btn-outline-success" [routerLink]="['/agregar']" routerLinkActive="routerLink">Agregar</button> -->
+
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Cliente</th>
+        <th scope="col">Latitud</th>
+        <th scope="col">Longitud</th>
+        <th scope="col">Estado</th>
+        <th scope="col">Costo de envio</th>
+        <th scope="col">Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pedido of lista">
+        <th scope="row">{{pedido.id}}</th>
+        <!-- <td>{{tarea.id}}</td> -->
+        <td>{{pedido.cliente}}</td>
+        <td>{{pedido.latitud}}</td>
+        <td>{{pedido.longitud}}</td>
+        <td>{{pedido.estado}}</td>
+        <td>{{pedido.costoEnvio}}</td>
+        <td>{{pedido.total}}</td>
+        <td>
+            <!-- <button type="button" class="btn btn-outline-warning" [routerLink]="['/editar',tarea.id]">Editar</button> -->
+            <button type="button" class="btn btn-outline-danger">Eliminar</button>
+        </td>
+      </tr>   
+    </tbody>
+  </table>
+</div>

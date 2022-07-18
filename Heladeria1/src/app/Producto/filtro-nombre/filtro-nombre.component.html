@@ -1,0 +1,34 @@
+<h2>Lista Productos Por Sucursal</h2>
+
+<section >
+    <nav class="navbar">
+        <ul>
+            <li class="nav-item">
+                <a [routerLink]="['/productos']" routerLinkActive="active" class="nav-link">Todos</a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/Cuenca']" routerLinkActive="active" class="nav-link">Cuenca</a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/Giron']" routerLinkActive="active" class="nav-link">Giron</a>
+            </li>
+        </ul>
+    </nav>
+</section>
+
+<section class="content">
+    <div class="flip-card" *ngFor = "let producto of productosNombre">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <h3>{{producto.nombre}}</h3>
+            </div>
+            <div class="flip-card-back">
+                <h1>{{producto.descripcion}}</h1>
+                <h1>{{producto.marca}}</h1>
+                <h1>${{producto.precio}}</h1>
+                <input type="text">
+                <button>Agregar</button>
+            </div>
+        </div>
+    </div>
+</section>
