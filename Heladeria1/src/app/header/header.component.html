@@ -9,11 +9,13 @@
 
             <div><a href="" [routerLink]="['/listarPedidos']" class="navbar-brand">Pedidos</a></div>
 
-            <div><a href="" class="navbar-brand">Productos</a></div>
+            <div><a href="" class="navbar-brand" [routerLink]="['/productos']">Productos</a></div>
+
+            <div><a href="" class="navbar-brand" [routerLink]="['/crearUsuario']">Crear Usuario</a></div>
 
             <div class="d-flex flex-row-reverse">
                 <div class="col">
-                    <div><a href="" [routerLink]="['/inicio']" class="navbar-brand">{{myuser.nombre}} {{myuser.apellido}}</a></div>
+                    <div><a href="" [routerLink]="['/inicio']" class="navbar-brand">Mi Usuario</a></div>
                 </div>
             </div>
         </nav>

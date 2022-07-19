@@ -22,6 +22,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ListaProductosComponent } from './Producto/lista-productos/lista-productos.component';
 import { FiltroSucursalComponent } from './Producto/filtro-sucursal/filtro-sucursal.component';
 import { FiltroNombreComponent } from './Producto/filtro-nombre/filtro-nombre.component';
+import { ActualizartarjetaComponent } from './Tarjeta/Component/actualizartarjeta/actualizartarjeta.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { FiltroNombreComponent } from './Producto/filtro-nombre/filtro-nombre.co
     CarritoComponent,
     ListaProductosComponent,
     FiltroSucursalComponent,
-    FiltroNombreComponent
+    FiltroNombreComponent,
+    ActualizartarjetaComponent
 
 
   ],

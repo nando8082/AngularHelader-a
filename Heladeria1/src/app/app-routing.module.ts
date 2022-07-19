@@ -37,8 +37,9 @@ const routes: Routes = [
 
   {path: 'Cuenca', component: FiltroNombreComponent},
 
-  {path: 'Giron', component: FiltroSucursalComponent}
+  {path: 'Giron', component: FiltroSucursalComponent},
 
+  {path: 'crearUsuario', component: AgregarComponent}
 
 ];
 

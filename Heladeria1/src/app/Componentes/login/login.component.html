@@ -1,3 +1,12 @@
+<header>
+    <div class="row">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div><a href="" class="navbar-brand">"Heladería Don Bosco"</a></div>
+
+        </nav>
+    </div>
+</header>
+
 <section class="vh-100" style="background-color: #508bfc;">
     <div class="container py-5 h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
@@ -23,7 +32,9 @@
                 <label class="form-check-label" for="form1Example3"> Remember password </label>
               </div>
   
-              <button class="btn btn-primary btn-lg btn-block" type="submit" (click)="obtenerUsuario()">Login</button>
+              <button class="btn btn-success btn-lg btn-block" type="submit" (click)="obtenerUsuario()">Login</button>
+              <br><br>
+              <button class="btn btn-success btn-lg btn-block " type="submit" [routerLink]="['/crearUsuario']">Crear Usuario</button>
   
               <hr class="my-4">
   

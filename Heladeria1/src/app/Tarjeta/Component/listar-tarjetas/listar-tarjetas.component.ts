@@ -20,7 +20,7 @@ export class ListarTarjetasComponent implements OnInit {
   }
 
   listarTarjetas() {
-    this.tarjetaService.getTarjetas().subscribe(
+    this.tarjetaService.obtenertarjetasporCliente(this.var2).subscribe(
       res => {
         this.lista = res
         console.log(res)

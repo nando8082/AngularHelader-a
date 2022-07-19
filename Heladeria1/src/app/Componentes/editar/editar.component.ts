@@ -10,7 +10,7 @@ import { UsuarioService } from 'src/app/Service/usuario.service';
 })
 export class EditarComponent implements OnInit {
 
-  id: string = "";
+  id: string=""
   usuarioActual: Usuario = { id: 0, cedula: '', nombre: '', apellido: '', correo: '', contrasenia: '', telefono: '', direccion: '' }
 
 
@@ -19,7 +19,8 @@ export class EditarComponent implements OnInit {
     private router: Router) { }
 
   ngOnInit(): void {
-    //this.id = this.activateRouter.snapshot.params.id;
+    this.id = this.activateRouter.snapshot.params.id;
   }
+
 
 }

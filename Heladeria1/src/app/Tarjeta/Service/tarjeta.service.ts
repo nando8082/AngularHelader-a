@@ -13,8 +13,8 @@ export class TarjetaService {
   url = 'http://localhost:8080/tarjeta'
   url1 = 'http://localhost:8080/tarjeta/crear'
   url2 = 'http://localhost:8080/tarjeta/eliminar'
+  url3= 'http://localhost:8080/tarjeta/myCards1'
   
-  private url3: string = `${environment.service_url}/sucursalproducto`;
 
   constructor(private http: HttpClient) { }
 
@@ -41,6 +41,6 @@ export class TarjetaService {
   }
 
   public obtenertarjetasporCliente(id: number) {
-    return this.http.get(`${this.url}/${id}`);
+    return this.http.get(this.url3 + '/' + id);
   }
 }

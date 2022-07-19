@@ -29,7 +29,7 @@ export class AgregarComponent implements OnInit {
     this.usuarioService.saveUsuario(this.usuarioNuevo).subscribe(
       res => {
         console.log(res)
-        this.router.navigate(['/inicio'])
+        this.router.navigate(['/login'])
       },
       err => console.log(err)
     );

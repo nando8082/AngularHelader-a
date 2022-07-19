@@ -5,6 +5,6 @@ export interface Tarjeta {
     fechaCducidad: string
     codigoCvv: string
     tipo: string
-    idC: number
+    idUsuario: number
 
 }

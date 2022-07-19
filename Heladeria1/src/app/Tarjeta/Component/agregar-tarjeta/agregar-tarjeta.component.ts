@@ -21,7 +21,7 @@ export class AgregarTarjetaComponent implements OnInit {
     fechaCducidad:'',
     codigoCvv:'',
     tipo:'',
-    idC: 0
+    idUsuario: this.var2
   }
 
   constructor( private tarjetaService: TarjetaService, private router: Router) { }
@@ -35,6 +35,7 @@ export class AgregarTarjetaComponent implements OnInit {
     this.tarjetaService.saveTarjeta(this.tarjetaNueva).subscribe(
       res=>{
         console.log(res)
+        console.log(this.tarjetaNueva.idUsuario)
         //this.router.navigate(['/listarTarjetas'])
       }
     )

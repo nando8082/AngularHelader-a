@@ -11,7 +11,7 @@ export class UsuarioService {
   url = 'http://localhost:8080/usuario'
   url1 = 'http://localhost:8080/usuario/create'
   url2= 'http://localhost:8080/usuario/iniciarSesion'
-  url3= 'http://localhost:8080/usuario/update'
+  url3= 'http://localhost:8080/usuario/modificar'
   url4 = 'http://localhost:8080/usuario/myUser'
 
 
@@ -38,7 +38,7 @@ export class UsuarioService {
   }
 
   editUsuario(id: number, usuario: Usuario):Observable<any>{
-    return this.http.put(this.url+'/'+id, usuario)
+    return this.http.put(this.url3+'/'+id, usuario)
   }
 
   deleteUsuario(id:number):Observable<any>{{
