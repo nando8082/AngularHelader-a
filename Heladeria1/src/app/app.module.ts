@@ -44,7 +44,6 @@ import { ActualizartarjetaComponent } from './Tarjeta/Component/actualizartarjet
     FiltroNombreComponent,
     ActualizartarjetaComponent
 
-
   ],
   imports: [
     BrowserModule,

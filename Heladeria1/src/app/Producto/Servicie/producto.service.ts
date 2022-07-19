@@ -25,7 +25,7 @@ export class ProductoService {
   }
 
   obternerProductosCuenca():Observable<any>{
-    return this.httpClient.get(`${this.urlCuenca }`);
+    return this.httpClient.get(`${this.urlCuenca}`);
 
   }
 

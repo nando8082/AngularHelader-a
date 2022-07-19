@@ -9,29 +9,24 @@
             </tr>
             </thead>
             <tbody>
-                <th>hola</th>
-                <th>gggf</th>
-                <th>gfgf</th>
+                <ng-container *ngFor="let producto of productos">
+                    <tr>
+                      <td>{{producto.nombre}}</td>
+                      <td>{{producto.quantity}}</td>
+                      <td>{{producto.precio}}</td>
+                    </tr>
+                    </ng-container>
             </tbody>
         </table>
     </div>
 
     <div class="row">
-        <p class="text-end" style="color:black">$900</p>
+        <p class="text-end" style="color:black">Total {{total()}}</p>
     </div>
 
     <div class="row">
         <div class="text-end">
-            <button>Comprar</button>
-            <form>
-                <input type="button" value="Comprar" onclick="msg()">
-            </form>
-
-            <script>
-                function msg() {
-                  alert("Hello world!");
-                }
-            </script>
+            <button >Comprar</button>
         </div> 
     </div>  
 

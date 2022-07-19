@@ -6,4 +6,6 @@ export interface Producto {
     stock:number;
     estado:string;
     precio:number;
+    quantity: number;
+    clearance: boolean;
 }
