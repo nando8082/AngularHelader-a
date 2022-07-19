@@ -19,7 +19,7 @@ export class EditarComponent implements OnInit {
     private router: Router) { }
 
   ngOnInit(): void {
-    this.id = this.activateRouter.snapshot.params.id;
+    //this.id = this.activateRouter.snapshot.params.id;
   }
 
 
