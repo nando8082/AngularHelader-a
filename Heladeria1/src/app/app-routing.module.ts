@@ -33,7 +33,7 @@ const routes: Routes = [
 
   {path: 'carrito', component: CarritoComponent},
 
-  {path: 'productos', component: ListaProductosComponent},
+  {path: 'productos', component: FiltroSucursalComponent},
 
   {path: 'Cuenca', component: FiltroNombreComponent},
 

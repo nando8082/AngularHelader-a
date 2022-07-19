@@ -1,11 +1,33 @@
-<h2>Lista Productos Por Sucursal</h2>
+<header>
+    <div class="row">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div><a href="" class="navbar-brand">"Heladería Don Bosco"</a></div>
+
+            <div><a href="" [routerLink]="['/listarTarjetas']" routerLinkActive="Active"
+                    class="navbar-brand">Tarjetas</a>
+            </div>
+
+            <div><a href="" [routerLink]="['/listarPedidos']" class="navbar-brand">Pedidos</a></div>
+
+            <div><a href="" class="navbar-brand" [routerLink]="['/productos']">Productos</a></div>
+
+            <div class="d-flex flex-row-reverse">
+                <div class="col">
+                    <div><a href="" [routerLink]="['/inicio']" class="navbar-brand">Mi Usuario</a></div>
+                </div>
+            </div>
+
+            <div><a href="" class="navbar-brand" [routerLink]="['/login']">Cerrar Sesion</a></div>
+        </nav>
+    </div>
+</header>
 
 <section >
     <nav class="navbar">
         <ul>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a [routerLink]="['/productos']" routerLinkActive="active" class="nav-link">Todos</a>
-            </li>
+            </li> -->
             <li class="nav-item">
                 <a [routerLink]="['/Cuenca']" routerLinkActive="active" class="nav-link">Cuenca</a>
             </li>
