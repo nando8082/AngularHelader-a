@@ -18,6 +18,8 @@
                   <div><a href="" [routerLink]="['/inicio']" class="navbar-brand">Mi Usuario</a></div>
               </div>
           </div>
+
+          <div><a href="" class="navbar-brand" [routerLink]="['/login']">Cerrar Sesion</a></div>
       </nav>
   </div>
 </header>
@@ -59,7 +61,7 @@
       </select>
       <span>Seleccione tipo de tarjeta</span>
 
-      <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Usuario"
+      <input type="hidden" id="defaultRegisterFormLastName" class="form-control" placeholder="Usuario"
         [(ngModel)]="tarjetaNueva.idUsuario" name="idUsuario" id="idUsuario" readonly >
 
       <!--<input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Tipo" [(ngModel)]="tarjetaNueva.tipo">-->
@@ -68,7 +70,7 @@
 
 
   <!-- Sign up button -->
-  <button type="button" class="btn btn-outline-success" type="submit" (click)="agregarTarjeta()">Guardar</button>
+  <button type="button" class="btn btn-outline-success" type="submit" (click)="agregarTarjeta()" [routerLink]="['/listarTarjetas']">Guardar</button>
   <!-- Social register 
     <p>or sign up with:</p>-->
 
