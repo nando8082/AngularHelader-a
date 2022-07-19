@@ -75,12 +75,12 @@ export class FiltroNombreComponent implements OnInit {
     return sum;
   }
 
-  agregarProducto() {
-    this.carritoData.crearDetalleporId(this.detalle).subscribe(
-      res=>{
-        console.log(res)
-      }
-    )
-  }
+  // agregarProducto() {
+  //   this.carritoData.crearDetalleporId(this.detalle).subscribe(
+  //     res=>{
+  //       console.log(res)
+  //     }
+  //   )
+  // }
 
 }
