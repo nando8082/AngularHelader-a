@@ -5,7 +5,7 @@ import { Producto } from '../producto';
 import { environment } from 'src/environments/environment';
 
 const URL = environment.service_url + '/detalle1/create';
-const url1 = environment.service_url+'/create'
+const url1 = environment.service_url + '/create'
 
 @Injectable({
   providedIn: 'root'
@@ -33,7 +33,7 @@ export class CarritoDataService {
     });
   }
 
-  crearDetalleporId(id: number, cantidad: number){
+  crearDetalleporId(id: number, cantidad: number) {
     this.http.post(url1, id)
   }
 

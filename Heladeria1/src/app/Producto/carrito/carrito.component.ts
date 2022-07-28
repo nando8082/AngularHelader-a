@@ -25,4 +25,8 @@ export class CarritoComponent implements OnInit {
     return sum;
   }
 
+  confirmar(){
+    alert("Pedido realizado")
+  }
+
 }
